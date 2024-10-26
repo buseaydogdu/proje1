@@ -1,9 +1,9 @@
-import uygulamalar.uygulamalarmenu
-def uygulamamenu():
+import moduller.cizimler
+def anamenu():
     print("\033[1;32;40m")
     #print("╔"+"═"*20+"╗")
     print("╔═════════════════════╗")
-    print("║\033[1;31;40m   UYGULAMALAR     \033[1;32;40m  ║")
+    print("║\033[1;31;40m  ANA MENÜ    \033[1;32;40m  ║")
     print("║                     ║")
     print("║  1-Hesap makinesi   ║")
     print("║  2-Çizimler         ║")
@@ -19,12 +19,8 @@ def uygulamamenu():
     print("║    Seçimiz nedir?   ║")
     print("╚═════════════════════╝")
 
-    if secim =="1":
-        print("Hesap makinesini seçtiniz")
-        uygulamalar.hesapmakinesi()
-        uygulamamenu
-    elif secim == "2":
-        print("Çizimler kategorisini seçtiniz") 
-    elif secim == "3":
-        print("Takvim kategorisini seçtiniz")
-        
+
+
+    moduller.cizimler.cizimmenu()   
+
+anamenu()    
